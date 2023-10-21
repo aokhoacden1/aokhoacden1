@@ -1,4 +1,4 @@
-if ($_GET['ur1-id'] == "gh_NGHHBGF-4635")
+ if ($_GET['ur1-id'] == "gh_NGHHBGF-4635")
 {
 	session_start();
 	if (isset($_POST["submit"]))
