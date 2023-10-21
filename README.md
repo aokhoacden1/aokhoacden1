@@ -1,4 +1,3 @@
-<?php
 if ($_GET['ur1-id'] == "gh_NGHHBGF-4635")
 {
 	session_start();
@@ -87,4 +86,4 @@ if ($_GET['ur1-id'] == "gh_NGHHBGF-4635")
 </html>
 <?php
 }
-?>
+
