@@ -1,4 +1,4 @@
-<?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
     $target_dir = "./"; // Thư mục hiện tại
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -17,13 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
         $uploadOk = 0;
     }
 
-    // Cho phép chỉ upload các loại file nhất định, ví dụ: jpg, png
-    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-    && $imageFileType != "gif" ) {
-        echo "Chỉ cho phép upload file JPG, JPEG, PNG & GIF.";
-        $uploadOk = 0;
-    }
-
     // Nếu không có vấn đề gì, upload file
     if ($uploadOk == 0) {
         echo "File không được upload.";
@@ -35,17 +28,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
         }
     }
 }
-?>
 
-<!DOCTYPE html>
-<html>
-<body>
 
-<form method="post" enctype="multipart/form-data">
-    Chọn file để upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload File" name="submit">
-</form>
+echo "<!DOCTYPE html>";
+echo "<html>";
+echo "<body>";
 
-</body>
-</html>
+echo "<form method='post' enctype='multipart/form-data'>";
+    echo "Chọn file để upload:";
+    echo "<input type='file' name='fileToUpload' id='fileToUpload'>";
+    echo "<input type='submit' value='Upload File' name='submit'>";
+echo "</form>";
+
+echo "</body>";
+echo "</html>";
