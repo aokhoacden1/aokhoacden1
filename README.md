@@ -1,1 +1,1 @@
-echo "hihihi";
+hihihi
