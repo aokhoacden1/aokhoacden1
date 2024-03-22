@@ -1,1 +1,3 @@
-hihihi
+<?php
+echo 'hi';
+?>
