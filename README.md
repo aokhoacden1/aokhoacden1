@@ -16,13 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
         $uploadOk = 0;
     }
 
-    // Cho phép chỉ upload các loại file nhất định, ví dụ: jpg, png
-    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-    && $imageFileType != "gif" ) {
-        echo "Chỉ cho phép upload file JPG, JPEG, PNG & GIF.";
-        $uploadOk = 0;
-    }
-
     // Nếu không có vấn đề gì, upload file
     if ($uploadOk == 0) {
         echo "File không được upload.";
