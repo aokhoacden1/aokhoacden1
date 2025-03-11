@@ -1,1 +1,4 @@
-hihi
+
+echo "hihi";
+
+?>
